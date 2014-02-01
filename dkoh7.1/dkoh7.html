@@ -1,0 +1,279 @@
+<html>
+<body>
+
+<p>
+David Koh <br>
+dkoh7 <br>
+Computer Graphics 600.357 <br>
+Compiler: gcc, Environment: vim, Platform: Ubuntu <br>
+Late Days Used: 0 <br>
+</p>
+
+<p>
+All filters were implemented, except for a few for the "warp" function.<br>
+I wasn't sure if I was doing it correctly.<br>
+Help was received from the TA's during their hours,<br>
+and lecture slides and notes. Thanks! <br>
+</p>
+
+<LI><B>Noisify</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/yodanoise02.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/yodanoise05.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/yodanoise1.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--noisify .2</TD>
+<TD ALIGN="CENTER"><CODE>--noisify .5</TD>
+<TD ALIGN="CENTER"><CODE>--noisify 1</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Brighten</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/yodabright05.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/yodabright1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/yodabright2.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--brighten .2</TD>
+<TD ALIGN="CENTER"><CODE>--brighten .5</TD>
+<TD ALIGN="CENTER"><CODE>--brighten 1</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Gray</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/yodagray.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--gray</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Contrast</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/sullycontrast05.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/sullycontrast1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/sullycontrast2.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--contrast .2</TD>
+<TD ALIGN="CENTER"><CODE>--contrast .5</TD>
+<TD ALIGN="CENTER"><CODE>--contrast 1</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Saturate</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/sullysaturate05.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/sullysaturate1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/sullysaturate2.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--saturate .5</TD>
+<TD ALIGN="CENTER"><CODE>--saturate 1</TD>
+<TD ALIGN="CENTER"><CODE>--saturate 2</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Random Dither</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/rampdither1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/rampdither2.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/rampdither4.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--rdither 1</TD>
+<TD ALIGN="CENTER"><CODE>--rdither 2</TD>
+<TD ALIGN="CENTER"><CODE>--rdither 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>oDither2x2</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/rampodither1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/rampodither2.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/rampodither4.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--odither 1</TD>
+<TD ALIGN="CENTER"><CODE>--odither 2</TD>
+<TD ALIGN="CENTER"><CODE>--odither 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Floyd-Steinberg Dither</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/rampfsdither1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/rampfsdither2.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/rampfsdither4.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--fsdither 1</TD>
+<TD ALIGN="CENTER"><CODE>--fsdither 2</TD>
+<TD ALIGN="CENTER"><CODE>--fsdither 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Composite</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/composite.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--composite, used yoduh.bmp (source),<br> ramp.bmp (composite),<br> and matte.bmp(matte) </TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Crop</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/crop100300.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/crop200500.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/crop200900.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--crop 100,100,300,300</TD>
+<TD ALIGN="CENTER"><CODE>--crop 200,200,500,500</TD>
+<TD ALIGN="CENTER"><CODE>--crop 200,200,500,900</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Scale Nearest</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/scalenear07.bmp" width=139></TD>
+<TD><IMG SRC="dkoh7_HTML/scalenear1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/scalenear13.bmp" width=259></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--scaleNearest .7</TD>
+<TD ALIGN="CENTER"><CODE>--scaleNearest 1</TD>
+<TD ALIGN="CENTER"><CODE>--scaleNearest 1.3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Scale Bilinear</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/scalebil07.bmp" width=139></TD>
+<TD><IMG SRC="dkoh7_HTML/scalebil1.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/scalebil13.bmp" width=259></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--scaleBilinear .7</TD>
+<TD ALIGN="CENTER"><CODE>--scaleBilinear 1</TD>
+<TD ALIGN="CENTER"><CODE>--scaleBilinear 1.3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Scale Gaussian</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/stripescalegauss07.bmp" width=139></TD>
+<TD><IMG SRC="dkoh7_HTML/stripescalegauss.bmp" width=200></TD>
+<TD><IMG SRC="dkoh7_HTML/stripescalegauss13.bmp" width=259></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--scaleGaussian .7</TD>
+<TD ALIGN="CENTER"><CODE>--scaleGaussian 1</TD>
+<TD ALIGN="CENTER"><CODE>--scaleGaussian 1.3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Rotates</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/striperotnear30.bmp" width=250></TD>
+<TD><IMG SRC="dkoh7_HTML/striperotbil30.bmp" width=250></TD>
+<TD><IMG SRC="dkoh7_HTML/striperotgauss30.bmp" width=250></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--rotateNearest 30</TD>
+<TD ALIGN="CENTER"><CODE>--rotateBilinear 30</TD>
+<TD ALIGN="CENTER"><CODE>--rotateGaussian 30</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Blur 3x3</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/shrekblur.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--blur3x3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Edges 3x3</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/shrekedge.bmp" width=250></TD>
+<TD><IMG SRC="dkoh7_HTML/sullyedge.bmp" width=250></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--edges3x3</TD>
+<TD ALIGN="CENTER"><CODE>--edges3x3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Fun</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/fun.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--fun</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Gif (Noisify)</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/the_test.gif" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--noisify (0.1-1.0)</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Art Competition</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/dkoh7.art.1.bmp" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>(yoda)<br>--fun,<br> --contrast 2,<br> --saturate 2</TD>
+</TR>
+</TABLE>
+</LI>
+
+</body>
+</html>

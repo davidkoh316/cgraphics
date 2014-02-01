@@ -1,0 +1,10 @@
+#ray_file_num 1
+#ray_file box.ray
+
+#group_begin
+    1.0 0.0 0.0 0.0
+    0.0 1.0 0.0 0.0
+    0.0 0.0 1.0 0.0
+    0.0 0.0 0.0 1.0
+    #ray_file_instance 0
+#group_end

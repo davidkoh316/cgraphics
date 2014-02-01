@@ -1,0 +1,202 @@
+#camera
+   -1.134 1.645 3.996
+   0.449492 -0.253421 -0.856583
+   0.082048 0.966573 -0.242909
+   0.523
+#ambient
+   0.2 0.2 0.2
+#light_num
+   2
+#light_point
+  1 1 1
+  -10 10 10
+  1 0 0
+#light_dir
+  0.6 0.6 0.6
+  0 0 1
+#ray_file_num
+   12
+#ray_file
+   ../ray/stick.pelvis.ray
+#ray_file
+   ../ray/stick.upper_leg.ray
+#ray_file
+   ../ray/stick.lower_leg.ray
+#ray_file
+   ../ray/stick.foot.ray
+#ray_file
+   ../ray/stick.chest.ray
+#ray_file
+   ../ray/stick.left_shoulder.ray
+#ray_file
+   ../ray/stick.upper_arm.ray
+#ray_file
+   ../ray/stick.lower_arm.ray
+#ray_file
+   ../ray/stick.hand.ray
+#ray_file
+   ../ray/stick.right_shoulder.ray
+#ray_file
+   ../ray/stick.neck.ray
+#ray_file
+   ../ray/stick.head.ray
+#key_file_num 1
+#key_file
+   run.key
+#joint_begin ROOT_NATURAL
+  #ray_file_instance 0
+  #group_begin
+    1 0 0 0
+    0 1 0 0.160202
+    0 0 1 -0.0265675
+    0 0 0 1
+    #joint_begin Chest
+      #ray_file_instance 4
+      #group_begin
+        1 0 0 0
+        0 1 0 0.412859
+        0 0 1 0
+        0 0 0 1
+        #joint_begin Neck
+          #ray_file_instance 10
+          #group_begin
+            1 0 0 0
+            0 1 0 0.0844846
+            0 0 1 0
+            0 0 0 1
+            #joint_begin Head
+              #ray_file_instance 11
+            #joint_end
+          #group_end
+        #joint_end
+      #group_end
+      #group_begin
+        1 0 0 -0.0185972
+        0 1 0 0.351754
+        0 0 1 -0.0270988
+        0 0 0 1
+        #joint_begin RightCollar
+          #ray_file_instance 9
+          #group_begin
+            1 0 0 -0.163124
+            0 1 0 0
+            0 0 1 0
+            0 0 0 1
+            #joint_begin RightShoulder
+              #ray_file_instance 6
+              #group_begin
+                1 0 0 0
+                0 1 0 -0.335813
+                0 0 1 0
+                0 0 0 1
+                #joint_begin RightElbow
+                  #ray_file_instance 7
+                  #group_begin
+                    1 0 0 0
+                    0 1 0 -0.26
+                    0 0 1 0
+                    0 0 0 1
+                    #joint_begin RightWrist
+                      #ray_file_instance 8
+                    #joint_end
+                  #group_end
+                #joint_end
+              #group_end
+            #joint_end
+          #group_end
+        #joint_end
+      #group_end
+      #group_begin
+        1 0 0 0.0185972
+        0 1 0 0.351754
+        0 0 1 -0.0270988
+        0 0 0 1
+        #joint_begin LeftCollar
+          #ray_file_instance 5
+          #group_begin
+            1 0 0 0.163124
+            0 1 0 0
+            0 0 1 0
+            0 0 0 1
+            #joint_begin LeftShoulder
+              #ray_file_instance 6
+              #group_begin
+                1 0 0 0
+                0 1 0 -0.335813
+                0 0 1 0
+                0 0 0 1
+                #joint_begin LeftElbow
+                  #ray_file_instance 7
+                  #group_begin
+                    1 0 0 0
+                    0 1 0 -0.26
+                    0 0 1 0
+                    0 0 0 1
+                    #joint_begin LeftWrist
+                      #ray_file_instance 8
+                    #joint_end
+                  #group_end
+                #joint_end
+              #group_end
+            #joint_end
+          #group_end
+        #joint_end
+      #group_end
+    #joint_end
+  #group_end
+  #group_begin
+    1 0 0 -0.0690755
+    0 1 0 0
+    0 0 1 0
+    0 0 0 1
+    #joint_begin RightHip
+      #ray_file_instance 1
+      #group_begin
+        1 0 0 0
+        0 1 0 -0.451913
+        0 0 1 0
+        0 0 0 1
+        #joint_begin RightKnee
+          #ray_file_instance 2
+          #group_begin
+            1 0 0 0
+            0 1 0 -0.476089
+            0 0 1 0
+            0 0 0 1
+            #joint_begin RightAnkle
+              #ray_file_instance 3
+            #joint_end
+          #group_end
+        #joint_end
+      #group_end
+    #joint_end
+  #group_end
+  #group_begin
+    1 0 0 0.0690755
+    0 1 0 0
+    0 0 1 0
+    0 0 0 1
+    #joint_begin LeftHip
+      #ray_file_instance 1
+      #group_begin
+        1 0 0 0
+        0 1 0 -0.451913
+        0 0 1 0
+        0 0 0 1
+        #joint_begin LeftKnee
+          #ray_file_instance 2
+          #group_begin
+            1 0 0 0
+            0 1 0 -0.476089
+            0 0 1 0
+            0 0 0 1
+            #joint_begin LeftAnkle
+              #ray_file_instance 3
+            #joint_end
+          #group_end
+        #joint_end
+      #group_end
+    #joint_end
+  #group_end
+#joint_end
+

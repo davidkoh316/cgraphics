@@ -1,0 +1,140 @@
+<html>
+<body>
+
+<p>
+David Koh <br>
+dkoh7 <br>
+Computer Graphics 600.357 <br>
+Compiled using gcc with Oracle VM VirtualBox, using Ubuntu <br>
+Late Days Used: 0 <br>
+</p>
+<br>
+<hr>
+<br>
+<p>
+The following assignment portions were implemented:<br>
+- All functions and modifications complete<br>
+- All Transformations: matrix, euler, closest, quaternion, log<br>
+- Linear interpolation, Catmull-Rom Splines, and Cubic B-Splines complete <br>
+- Generating image sequences for movies feature<br>
+</p>
+
+<p>
+Help was received from the TA's during their hours. Thanks! <br>
+</p>
+
+<br>
+<hr>
+<br>
+
+<p>
+To run assignment, go to the directory called "act" (/dkoh7.4/act).<br>
+Then, type the following command: <br>
+<br>
+<b>../Assignment4 --in test.ray --width 800 --height 800 --cplx 10 --factor matrix</b>
+<br>
+<br>
+You can also change the "factor" to euler, closest, quaternion, and log as well.
+</p>
+
+<br>
+<hr>
+<br>
+
+<p>
+Linear interpolation, Catmull-Rom Splines, and Cubic B-Splines are also implemented. <br>
+<br>
+They may be changed by going to the "parameterSamples.todo.inl" file and <br>
+changing the "type" to the one preferred.<br>
+The default is currently set to linear interpolation.<br>
+</p>
+
+<br>
+<hr>
+<br>
+
+<p>
+Simultaneous images may be generated and used <b>to make a movie</b>.<br>
+<br>
+To use this feature, go to to Ray folder and open the rayWindow.cpp file. <br>
+At the top is a boolean variable called "video_on" that is set to false by default. <br>
+Simply change this variable to true, and screenshot frame by frame. <br>
+This creates many jpeg images in the same folder ("act" folder). <br>
+<br>
+Using an external program, you may stitch together the images to create a movie. <br>
+To clean up the jpegs, use the rm (rm *.jpeg) command, or highlight all and delete the images.<br>
+</p>
+
+<br>
+<hr>
+<p></p>
+Below are some sample results using files from the "act" folder.<br>
+Images have been cropped/scaled:<br>
+<br><br>
+<LI><B>Matrix</B><br>
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/matrix.png" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>Matrix</TD>
+</TR>
+</TABLE>
+</LI>
+
+<br><br>
+<LI><B>Closest</B><br>
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/closest.png" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>Closest</TD>
+</TR>
+</TABLE>
+</LI>
+
+<br><br>
+<LI><B>Log</B><br>
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/log.png" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>Log</TD>
+</TR>
+</TABLE>
+</LI>
+
+
+
+<br><br>
+<LI><B> Image Art Competition</B>:
+With some adjustments to rayCylinder.todo.cpp, I present to you "Picasso's Dream":<br>
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/dkoh7.art.1.png" width=400></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>"Picasso's Dream"</TD>
+</TR>
+</TABLE>
+</LI>
+
+<br><br>
+<LI><B> Video Art Competition</B>:
+Using the movie feature, Here is my movie (gif, set to low quality):<br>
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="dkoh7_HTML/dkoh7.art.1.gif" width=400></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>"Running Man"</TD>
+</TR>
+</TABLE>
+</LI>
+
+<br><br><br>
+
+</body>
+</html>
